@@ -1,11 +1,12 @@
+import React from 'react';
 import {
   useLogin,
   useLogout,
   useAddToCart,
-  useUser,
   useCartCount,
+  useUser,
   StoreContextProvider,
-} from "./store-context";
+} from './store-context';
 
 const LoginSection = () => {
   const login = useLogin();
@@ -28,7 +29,7 @@ const AddToCartSection = () => {
   const addToCart = useAddToCart();
   return (
     <div>
-      <button onClick={addToCart}>Add To Cart</button>
+      <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
 };
@@ -38,7 +39,7 @@ const CartCountSection = () => {
   return <div>Cart count: {cartCount}</div>;
 };
 
-function ContextPage() {
+const ContextPage = () => {
   return (
     <div>
       <LoginSection />
@@ -47,9 +48,9 @@ function ContextPage() {
       <CartCountSection />
     </div>
   );
-}
+};
 
-export default function ContextPageWrapper() {
+export default function ContextWrapper() {
   return (
     <StoreContextProvider>
       <ContextPage />

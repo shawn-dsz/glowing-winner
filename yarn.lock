@@ -1431,8 +1431,8 @@ __metadata:
     next: "npm:12.0.10"
     react: "npm:17.0.2"
     react-dom: "npm:17.0.2"
-    use-context-selector: "npm:^1.3.9"
-    zustand: "npm:^3.7.0"
+    use-context-selector: "npm:^1.4.1"
+    zustand: "npm:^4.0.0-rc.4"
   languageName: unknown
   linkType: soft
 
@@ -2170,9 +2170,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-context-selector@npm:^1.3.9":
-  version: 1.3.9
-  resolution: "use-context-selector@npm:1.3.9"
+"use-context-selector@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "use-context-selector@npm:1.4.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: "*"
@@ -2183,7 +2183,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 08ce4554260e83450cf1d33ec9a6b7be25480ac0ee50ed6e9fd2a4bb297bb6682ebc080fcd30ab1953fc6be7b4b80f8f73368281938dcc3bc99ddca5a3628d9c
+  checksum: fe3f9d4a205033178b03f7a9a84e8a7a3eb88ed6d854c82be946a33e81989fe301f1f116db73bbe499271db6a77cfedd8bc034a92113f6f873c8480277313f2b
   languageName: node
   linkType: hard
 
@@ -2195,6 +2195,15 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
   checksum: 354f2153743077bf40b98b78428b88f7c1ae59d7eb3299e5734046d1c17c7f9cf3002266edc93070a6d971791dfcf547bd6e0c6ac8f12ee14490a1cf5ea83711
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: bed3d1f68ca3dd33647035dbeb9d3a5ece12fced0245cb0fa831426192e52e4948b0fc6e9187d9d4dce9f58269af605f8feeeda100d2928f8b865f9cd9cc4a4a
   languageName: node
   linkType: hard
 
@@ -2250,14 +2259,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zustand@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "zustand@npm:3.7.0"
+"zustand@npm:^4.0.0-rc.4":
+  version: 4.0.0-rc.4
+  resolution: "zustand@npm:4.0.0-rc.4"
+  dependencies:
+    use-sync-external-store: "npm:1.2.0"
   peerDependencies:
+    immer: ">=9.0"
     react: ">=16.8"
   peerDependenciesMeta:
+    immer:
+      optional: true
     react:
       optional: true
-  checksum: 85e187949bef94974f7e54671bfba7341f6a9a852bcfed126df0044b24ffe7cbc96e79d3247d3154b0b5441b5b645b2023a989ec4f0b98364e285f7f3d6217b0
+  checksum: d82bdd56468978799c3da8c4d8ee1d29554026cb5b4fda9d0e6c0332a091cc89a921d3770a08b21a6f5893e45a4f0fcec6473adec3fec0bd141648c3b5599c4e
   languageName: node
   linkType: hard

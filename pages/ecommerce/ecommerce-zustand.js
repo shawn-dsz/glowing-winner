@@ -1,10 +1,11 @@
+import React from 'react';
 import {
   useLogin,
   useLogout,
   useAddToCart,
-  useUser,
   useCartCount,
-} from "./store-zustand";
+  useUser,
+} from './store-zustand';
 
 const LoginSection = () => {
   const login = useLogin();
@@ -27,7 +28,7 @@ const AddToCartSection = () => {
   const addToCart = useAddToCart();
   return (
     <div>
-      <button onClick={addToCart}>Add To Cart</button>
+      <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
 };
